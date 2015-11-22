@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MondrianLayout">
+        <!--Number of columns in the layout-->
+        <attr name="columns" format="integer"/>
+        <attr name="rows" format="integer" />
+        <attr name="borderRatio" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="MondrianLayout_Layout">
+        <attr name="layout_column" format="integer"/>
+        <attr name="layout_row" format="integer"/>
+        <attr name="layout_width" format="integer"/>
+        <attr name="layout_height" format="integer"/>
+    </declare-styleable>
+
+</resources>
