@@ -1,4 +1,14 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.novoda.bintray-release'
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.novoda:bintray-release:0.3.4'
+    }
+}
 
 android {
     compileSdkVersion 23
@@ -16,5 +26,15 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+
 }
 
+publish {
+    userOrg = 'worldline-spain'
+    groupId = 'com.worldline'
+    artifactId = 'mondrianlayout'
+    publishVersion = '1.0.0'
+    desc = 'An Android Layout to easily setup grid-based controls'
+    website = 'https://github.com/worldline-spain/mondrian-layout'
+}

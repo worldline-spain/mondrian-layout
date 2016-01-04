@@ -108,10 +108,10 @@ public class MondrianLayout extends ViewGroup {
     }
 
     /***
-     * Generates a right {@link .LayoutParams} from the xml
+     * Generates a right {@link LayoutParams} from the xml
      * attributes
      * @param attrs the set of attributes received from xml
-     * @return A correct {@link .LayoutParams} that will allows
+     * @return A correct {@link LayoutParams} that will allows
      * the child object to be correctly inflated and parsed on the onMeasure and onLayout
      */
     @Override
@@ -128,8 +128,8 @@ public class MondrianLayout extends ViewGroup {
     /***
      * Not really sure what this is for, it will be nice to make some transformations, like
      * MATCH_PARENT=get all columns, an so on. NO TIME RIGHT NOW.
-     * @param p
-     * @return
+     * @param p LayoutParams received by system default
+     * @return A new MondrianLayout.LayoutParams
      */
     @Override
     protected ViewGroup.LayoutParams generateLayoutParams(ViewGroup.LayoutParams p) {
