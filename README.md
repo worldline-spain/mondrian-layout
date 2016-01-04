@@ -12,9 +12,11 @@ You can:
 
 ## Getting MondrianLayout
 
-Grab the mondrianlayout module and add it to your application.
+Just add the following to your build.gradle file
 
-We are working on publishing this component into jcentral for your own convencience. Stay tuned!
+```groovy
+  compile 'com.worldline:mondrianlayout:1.0.0'
+```
 
 ## Usage
 
